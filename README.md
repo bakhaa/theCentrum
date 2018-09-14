@@ -1,4 +1,4 @@
 ## Run project
 
-### `yarn` or `npm`
-### `yarn start` or `npm start`
+### `yarn` or `npm` to install all required packages, then
+### `yarn start` or `npm start` to start
