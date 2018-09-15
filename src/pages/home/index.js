@@ -15,22 +15,22 @@ const Content = styled.div`
 const items = [
   {
     link: '',
-    photo: '/img/data/1.png',
+    photo: 'img/data/1.png',
     title: 'Get an Oil Change While you Work',
   },
   {
     link: '',
-    photo: '/img/data/2.png',
+    photo: 'img/data/2.png',
     title: 'On Demand Laundry @ Hall St.',
   },
   {
     link: '',
-    photo: '/img/data/3.png',
+    photo: 'img/data/3.png',
     title: 'Document Destruction Services - Be Secure',
   },
   {
     link: '',
-    photo: '/img/data/1.png',
+    photo: 'img/data/1.png',
     title: 'Get an Oil Change While you Work',
   },
 ]

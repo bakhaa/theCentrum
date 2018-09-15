@@ -77,7 +77,7 @@ export const Bar = ({ classes, handleNavOpen, handleNavClose, open }) => (
           )}
 
         <div className='logo'>
-          <img src='/img/logo.png' alt='THE CENTRUM' />
+          <img src='img/logo.png' alt='THE CENTRUM' />
         </div>
         <div className='right'>
           <ImportExport />

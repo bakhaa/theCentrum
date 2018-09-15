@@ -89,7 +89,7 @@ export const Nav = ({ classes, open }) => {
       }}
     >
       <div className={classes.drawerHeader}>
-        <img src='/img/logo-nav.png' alt='THE CENTRUM' />
+        <img src='img/logo-nav.png' alt='THE CENTRUM' />
       </div>
       <List>
         {
