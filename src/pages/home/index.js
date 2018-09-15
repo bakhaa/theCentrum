@@ -3,6 +3,7 @@ import { Grid } from '@material-ui/core';
 import styled from 'styled-components';
 import SectorPreview from '../../components/sector-preview';
 import SectiorSidebarLinks from '../../components/section-sidebar';
+import SectiorSidebarMap from '../../components/section-sidebar/Map';
 
 const Content = styled.div`
   background: #FFFFFF;
@@ -61,6 +62,7 @@ export const HomePage = () => (
     <Grid item xs={12} sm={4}>
       <SectiorSidebarLinks title='RSVP' link='news' items={itemsSidebar} />
       <SectiorSidebarLinks title='Favorites' link='perks' items={itemsSidebar} />
+      <SectiorSidebarMap />
     </Grid>
   </Grid>
 );
