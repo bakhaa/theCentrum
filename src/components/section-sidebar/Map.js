@@ -8,6 +8,7 @@ const Section = styled.section`
   height: 300px;
   margin-bottom: 30px;
   overflow: hidden;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
 `;
 
 class SectiorSidebarMap extends Component {
