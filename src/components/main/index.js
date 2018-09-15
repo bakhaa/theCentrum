@@ -75,8 +75,8 @@ class Main extends Component {
 
     return (
       <div className={classes.root}>
-        <Bar open={navOpen} handleNavOpen={this.handleNavOpen.bind(this)} />
-        <Nav open={navOpen} handleNavClose={this.handleNavClose.bind(this)}/>
+        <Bar open={navOpen} handleNavOpen={this.handleNavOpen.bind(this)} handleNavClose={this.handleNavClose.bind(this)} />
+        <Nav open={navOpen} />
 
         <main className={classNames(classes.content, classes['content-left'], {
           [classes.contentShift]: navOpen,

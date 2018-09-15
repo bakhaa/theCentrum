@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import { Drawer, List } from '@material-ui/core';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import IconButton from '@material-ui/core/IconButton';
+
 
 // icons
 import {
@@ -28,9 +27,9 @@ const styles = theme => ({
     width: drawerWidth,
   },
   drawerHeader: {
+    height: 80,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'flex-end',
     padding: '0 8px',
     ...theme.mixins.toolbar,
   },
@@ -81,8 +80,7 @@ const links = [
   },
 ];
 
-export const Nav = ({ classes, open, handleNavClose }) => {
-  console.log('open', open);
+export const Nav = ({ classes, open }) => {
   return (
     <Drawer
       variant="persistent"
@@ -92,11 +90,8 @@ export const Nav = ({ classes, open, handleNavClose }) => {
       }}
     >
       <div className={classes.drawerHeader}>
-        <IconButton onClick={handleNavClose}>
-          <ChevronLeftIcon />
-        </IconButton>
+        <img src='/img/logo-nav.png' />
       </div>
-      {/* <div className={classes.toolbar} /> */}
       <List>
         {
           links.map((item, idx) => (

@@ -7,6 +7,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 import {
   ImportExport,
@@ -50,7 +51,7 @@ const styles = theme => ({
   }
 });
 
-export const Bar = ({ classes, handleNavOpen, open }) => (
+export const Bar = ({ classes, handleNavOpen, handleNavClose, open }) => (
   <AppBar
     className={classNames(classes.appBar, {
       [classes.appBarShift]: open,
@@ -60,14 +61,22 @@ export const Bar = ({ classes, handleNavOpen, open }) => (
     <Toolbar disableGutters={false}>
 
       <div className={classes.header}>
-        <IconButton
-          color="inherit"
-          aria-label="Open drawer"
-          onClick={handleNavOpen}
-          className={classNames(classes.menuButton, open && classes.hide)}
-        >
-          <MenuIcon />
-        </IconButton>
+        {!open ? (
+          <IconButton
+            color="inherit"
+            aria-label="Open drawer"
+            onClick={handleNavOpen}
+            disabled={open}
+            className={classNames(classes.menuButton)}
+          >
+            <MenuIcon />
+          </IconButton>)
+          : (
+            <IconButton onClick={handleNavClose}>
+              <ChevronLeftIcon />
+            </IconButton>
+          )}
+
         <div className='logo'>
           <img src='/img/logo.png' />
         </div>
