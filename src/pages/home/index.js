@@ -2,10 +2,12 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import styled from 'styled-components';
 import SectorPreview from '../../components/sector-preview';
+import SectiorSidebarLinks from '../../components/section-sidebar';
 
 const Content = styled.div`
   background: #FFFFFF;
   border-radius: 6px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
   padding: 60px;
 `;
 
@@ -32,6 +34,21 @@ const items = [
   },
 ]
 
+const itemsSidebar = [
+  {
+    title: 'TX Bourbon Whiskey Tasting',
+    link: '/news'
+  },
+  {
+    title: 'Free Shred Event',
+    link: '/news'
+  },
+  {
+    title: 'Coacktail & Dinner at Centrum',
+    link: '/news'
+  },
+]
+
 export const HomePage = () => (
   <Grid container spacing={24}>
     <Grid item xs={12} sm={8}>
@@ -42,7 +59,8 @@ export const HomePage = () => (
       </Content>
     </Grid>
     <Grid item xs={12} sm={4}>
-      <div>sidebar</div>
+      <SectiorSidebarLinks title='RSVP' link='news' items={itemsSidebar} />
+      <SectiorSidebarLinks title='Favorites' link='perks' items={itemsSidebar} />
     </Grid>
   </Grid>
 );

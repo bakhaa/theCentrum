@@ -20,7 +20,6 @@ const styles = theme => ({
   root: {
     margin: 0,
     padding: 0,
-    backgrround: '#F8F8F8',
     flexGrow: 1,
     overflow: 'hidden',
     position: 'relative',
@@ -29,7 +28,7 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
+    background: '#F8F8F8',
     padding: theme.spacing.unit * 3,
     marginLeft: 60,
     paddingTop: 120,
