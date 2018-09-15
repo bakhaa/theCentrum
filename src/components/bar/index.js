@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -20,7 +19,7 @@ const styles = theme => ({
     background: '#FFFFFF',
     position: 'absolute',
     color: '#000000',
-    boxShadow: 'none',
+    boxShadow: '0px 2px 4px rgba(0, 0, 0, .1)',
     height: 80,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -78,7 +77,7 @@ export const Bar = ({ classes, handleNavOpen, handleNavClose, open }) => (
           )}
 
         <div className='logo'>
-          <img src='/img/logo.png' />
+          <img src='/img/logo.png' alt='THE CENTRUM' />
         </div>
         <div className='right'>
           <ImportExport />

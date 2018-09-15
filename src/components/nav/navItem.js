@@ -1,9 +1,8 @@
 import React from 'react';
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
-import { Tooltip, IconButton, Typography } from '@material-ui/core';
+import { IconButton, Typography } from '@material-ui/core';
 
 const styles = () => ({
   navButton: {

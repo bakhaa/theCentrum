@@ -10,7 +10,6 @@ import {
   Home,
   Receipt,
   ImportExport,
-  AccountCircle,
   StarRate,
   CalendarToday
 } from '@material-ui/icons';
@@ -90,7 +89,7 @@ export const Nav = ({ classes, open }) => {
       }}
     >
       <div className={classes.drawerHeader}>
-        <img src='/img/logo-nav.png' />
+        <img src='/img/logo-nav.png' alt='THE CENTRUM' />
       </div>
       <List>
         {
