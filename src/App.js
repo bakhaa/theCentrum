@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import createBrowserHistory from 'history/createBrowserHistory';
+import createBrowserHistory from 'history/createHashHistory';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import configureStore from './store';
