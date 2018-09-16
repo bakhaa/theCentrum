@@ -12,8 +12,9 @@ import {
   ImportExport,
 } from '@material-ui/icons';
 
-const drawerWidth = 240;
+import { drawerWidth } from '../../utils/constants';
 
+// TODO: change with styled-components
 const styles = theme => ({
   appBar: {
     background: '#FFFFFF',

@@ -45,7 +45,7 @@ const More = styled(Link)`
   text-decoration: none;
 `;
 
-class SectiorSidebarLinks extends Component {
+class SectionSidebarLinks extends Component {
   render() {
     const { title, items, link } = this.props;
     return (
@@ -64,4 +64,4 @@ class SectiorSidebarLinks extends Component {
   }
 };
 
-export default SectiorSidebarLinks;
+export default SectionSidebarLinks;

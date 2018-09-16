@@ -54,7 +54,7 @@ const ItemTitle = styled.div`
   font-family: "Roboto", "Helvetica";
 `;
 
-class SectiorPreview extends Component {
+class SectionPreview extends Component {
   render() {
     const { title, items, link } = this.props;
     return (
@@ -76,4 +76,4 @@ class SectiorPreview extends Component {
   }
 };
 
-export default SectiorPreview;
+export default SectionPreview;

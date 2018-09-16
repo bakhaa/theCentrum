@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import { IconButton, Typography } from '@material-ui/core';
 
+// TODO: change with styled-components
 const styles = () => ({
   navButton: {
     color: '#FFFFFF',

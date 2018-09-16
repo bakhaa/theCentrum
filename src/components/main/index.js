@@ -14,7 +14,7 @@ import {
 import Bar from '../bar';
 import Nav from '../nav';
 
-const drawerWidth = 240;
+import { drawerWidth } from '../../utils/constants';
 
 const styles = theme => ({
   root: {

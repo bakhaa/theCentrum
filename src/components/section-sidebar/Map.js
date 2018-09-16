@@ -11,7 +11,7 @@ const Section = styled.section`
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
 `;
 
-class SectiorSidebarMap extends Component {
+class SectionSidebarMap extends Component {
   static defaultProps = {
     center: {
       lat: 41.0812069,
@@ -32,4 +32,4 @@ class SectiorSidebarMap extends Component {
   }
 }
 
-export default SectiorSidebarMap;
+export default SectionSidebarMap;

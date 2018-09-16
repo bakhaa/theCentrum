@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import styled from 'styled-components';
-import SectorPreview from '../../components/sector-preview';
-import SectiorSidebarLinks from '../../components/section-sidebar';
-import SectiorSidebarMap from '../../components/section-sidebar/Map';
+import SectionPreview from '../../components/section-preview';
+import SectionSidebarLinks from '../../components/section-sidebar';
+import SectionSidebarMap from '../../components/section-sidebar/Map';
 
 const Content = styled.div`
   background: #FFFFFF;
@@ -54,15 +54,15 @@ export const HomePage = () => (
   <Grid container spacing={24}>
     <Grid item xs={12} sm={8}>
       <Content>
-        <SectorPreview title='last news' link='/news' items={items} />
-        <SectorPreview title='perks' link='/perks' items={items} />
-        <SectorPreview title='events' link='/events' items={items} />
+        <SectionPreview title='last news' link='/news' items={items} />
+        <SectionPreview title='perks' link='/perks' items={items} />
+        <SectionPreview title='events' link='/events' items={items} />
       </Content>
     </Grid>
     <Grid item xs={12} sm={4}>
-      <SectiorSidebarLinks title='RSVP' link='news' items={itemsSidebar} />
-      <SectiorSidebarLinks title='Favorites' link='perks' items={itemsSidebar} />
-      <SectiorSidebarMap />
+      <SectionSidebarLinks title='RSVP' link='news' items={itemsSidebar} />
+      <SectionSidebarLinks title='Favorites' link='perks' items={itemsSidebar} />
+      <SectionSidebarMap />
     </Grid>
   </Grid>
 );

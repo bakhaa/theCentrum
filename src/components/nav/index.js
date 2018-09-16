@@ -16,8 +16,9 @@ import {
 
 import NavItem from './navItem';
 
-const drawerWidth = 240;
+import { drawerWidth } from '../../utils/constants';
 
+// TODO: change with styled-components
 const styles = theme => ({
   drawerPaper: {
     background: '#F9A726',
@@ -33,7 +34,6 @@ const styles = theme => ({
     ...theme.mixins.toolbar,
   },
 });
-
 
 const links = [
   {
