@@ -62,7 +62,7 @@ export const HomePage = () => (
     <Grid item xs={12} sm={4}>
       <SectionSidebarLinks title='RSVP' link='news' items={itemsSidebar} />
       <SectionSidebarLinks title='Favorites' link='perks' items={itemsSidebar} />
-      <SectionSidebarMap />
+      {/* <SectionSidebarMap /> */}
     </Grid>
   </Grid>
 );

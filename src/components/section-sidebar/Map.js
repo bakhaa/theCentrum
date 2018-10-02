@@ -23,7 +23,7 @@ class SectionSidebarMap extends Component {
     return (
       <Section>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyBZL8Fce5TmuzJRYy2Ho0E2uxOcdqlWVbI' }}
+          bootstrapURLKeys={{ key: 'KEY' }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         />
